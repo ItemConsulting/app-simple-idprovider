@@ -22,12 +22,6 @@
       </config>
     </input>
 
-    <input name="themeColor" type="TextLine">
-      <label>Custom theme color</label>
-      <occurrences minimum="0" maximum="1"/>
-      <default></default>
-    </input>
-
     <input name="gravatar" type="Checkbox">
       <label>Gravatar picture</label>
       <occurrences minimum="0" maximum="0"/>
@@ -62,26 +56,6 @@
             </input>
           </items>
         </item-set>
-      </items>
-    </item-set>
-
-    <item-set name="company">
-      <label>Company branding</label>
-      <occurrences minimum="0" maximum="1"/>
-      <items>
-        <input name="name" type="TextLine">
-          <label>Company name</label>
-          <occurrences minimum="0" maximum="1"/>
-          <default>My Company</default>
-        </input>
-        <input type="AttachmentUploader" name="myname">
-          <label>My Label</label>
-          <occurrences minimum="0" maximum="0"/>
-        </input>
-        <input type="ImageSelector" name="logo">
-          <label>Logo</label>
-          <occurrences minimum="0" maximum="0"/>
-        </input>
       </items>
     </item-set>
 

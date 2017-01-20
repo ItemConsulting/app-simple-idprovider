@@ -55,7 +55,7 @@ exports.generateLogoutPage = function (user) {
         config: config,
         title: user.displayName,
         profileUrl: profileUrl,
-        submit: "LOG OUT"
+        submit: "GO TO LOGIN PAGE"
     });
 };
 
