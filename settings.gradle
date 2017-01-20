@@ -1,1 +1,4 @@
 rootProject.name = projectName
+
+include 'idproviderdisplay'
+project(':idproviderdisplay').projectDir = new File('../lib-idprovider-display')

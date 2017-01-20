@@ -7,6 +7,7 @@
       <occurrences minimum="0" maximum="1"/>
       <default>User Login</default>
     </input>
+
     <input name="theme" type="ComboBox">
       <label>Theme</label>
       <occurrences minimum="0" maximum="1"/>
@@ -17,13 +18,21 @@
         <option value="dark-blue">Dark Blue</option>
         <option value="dark-green">Dark Green</option>
         <option value="dark-red">Dark Red</option>
+        <option value="purple">Purple</option>
       </config>
-      <default>light-blue</default>
     </input>
+
+    <input name="themeColor" type="TextLine">
+      <label>Custom theme color</label>
+      <occurrences minimum="0" maximum="1"/>
+      <default></default>
+    </input>
+
     <input name="gravatar" type="Checkbox">
       <label>Gravatar picture</label>
       <occurrences minimum="0" maximum="0"/>
     </input>
+
     <item-set name="forgotPassword">
       <label>Forgot password</label>
       <occurrences minimum="0" maximum="1"/>
@@ -38,7 +47,6 @@
           <occurrences minimum="1" maximum="1"/>
           <default>MyWebsite</default>
         </input>
-
 
         <item-set name="reCaptcha">
           <label>ReCaptcha</label>
@@ -56,5 +64,26 @@
         </item-set>
       </items>
     </item-set>
+
+    <item-set name="company">
+      <label>Company branding</label>
+      <occurrences minimum="0" maximum="1"/>
+      <items>
+        <input name="name" type="TextLine">
+          <label>Company name</label>
+          <occurrences minimum="0" maximum="1"/>
+          <default>My Company</default>
+        </input>
+        <input type="AttachmentUploader" name="myname">
+          <label>My Label</label>
+          <occurrences minimum="0" maximum="0"/>
+        </input>
+        <input type="ImageSelector" name="logo">
+          <label>Logo</label>
+          <occurrences minimum="0" maximum="0"/>
+        </input>
+      </items>
+    </item-set>
+
   </config>
 </id-provider>
